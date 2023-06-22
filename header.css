@@ -1,0 +1,68 @@
+.logo{
+    width: 90px;
+    height: 70px;
+}
+
+.righth{
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    font-size: 30;
+    font-family: 'Rubik Iso', cursive;
+    color: white;
+}
+
+.lefth{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+    flex-wrap: wrap;
+
+}
+
+.lefth>a{
+    text-align: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: all .3s;
+
+}
+
+.lefth>a:hover{
+    transform:translate(-2px, -2px);
+    text-shadow: 2px 2px 5px white;
+}
+
+.panel{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.head{
+    width: 100vw;
+    max-width: 100%;
+    position: fixed;
+    padding: 10px;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 5px black;
+}
+
+@media(max-width: 853px){
+    .panel{
+        flex-direction: column;
+        align-items: center;
+    }
+    .lefth{
+        flex-direction: column;
+        align-items: center;
+    }
+    .head{
+        position:absolute;
+    }
+}

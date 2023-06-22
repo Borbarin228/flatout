@@ -1,0 +1,106 @@
+*,*::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.main{
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    flex: 1;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("mainbg.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-bottom: 150px;
+    flex: 1;
+}
+
+.reg-form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 230px;
+    gap: 40px;
+    color: white;
+    font-size: 30px;
+    text-shadow: 0px 0px 14px rgba(255, 255, 255, 0.5);
+}
+
+.register{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    text-align: center;
+
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    gap:10px;
+
+
+}
+
+.register>input{
+    display: flex;
+    border: none;
+    height: 40px;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 7px 7px 10px black;
+}
+
+.login-input{
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.input-file{
+    background-color: white;
+    color:black;
+}
+
+.reg-button{
+    text-align: center;
+    align-items: center;
+    border-radius: 15px;
+    height: 40px;
+    width:150px;
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.input-file{
+    text-align: center;
+
+}
+
+.reg-button:hover{
+    filter: brightness(90%);
+    box-shadow: 0px 0px 5px rgb(255, 255, 255);
+}
+
+@media(max-width: 853px){
+    .reg-form{
+        margin-top: 290px;
+    }
+
+}
